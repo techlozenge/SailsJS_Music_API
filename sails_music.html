@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sails Music</title>
+  </head>
+  <body id="body">
+
+    <div style="width: 100%; margin: 0 auto; align: center">
+      <h1 id="page-heading" style="margin-bottom:5px;"></h1><br />
+    </div>
+
+    <!-- CRUD IN ACTION! -->
+    <!-- TODO: Style the table to be more user friendly -->
+
+    <!-- READ -->
+    <button id="refresh">READ/REFRESH</button><br><br />
+
+    <!-- CREATE -->
+    <button id="post">CREATE/POST a New Artist</button><br><br />
+
+    <!-- UPDATE -->
+    <button id="put">UPDATE/PUT a Change</button><br>
+
+    <!-- DELETE -->
+    <p><b>Note: Click the Artist ID link to DELETE that record</b></p>
+
+    <!-- TODO: Needs to go into a CSS Stylesheet -->
+    <style type="text/css">
+         #dynamictable table {
+             width: 75%;
+             vertical-align: top;
+             text-align: left;
+         }
+         #dynamictable table tr td th {
+             border: solid 1px black;
+             vertical-align: top;
+             text-align: left;
+         }
+         table {
+           border: 1px solid black;
+         }
+         th {
+           border: 1px solid black;
+           text-align: center;
+         }
+         td {
+           width: 35%;
+           border: 1px solid black;
+         }
+     </style>
+
+    <div id="dynamictable"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascripts/sails_music.js"></script>
+    <script type="text/javascript"></script>
+  </body>
+</html>
