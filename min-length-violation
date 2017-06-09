@@ -1,0 +1,17 @@
+{
+  "invalidAttributes": {
+    "first_name": [
+      {
+        "rule": "minLength",
+        "message": "\"minLength\" validation rule failed for input: 'Tom'\nSpecifically, it threw an error.  Details:\n undefined"
+      }
+    ]
+  },
+  "model": "Sails-music",
+  "_e": {},
+  "rawStack": "    at WLValidationError.WLError (/usr/local/lib/node_modules/sails/node_modules/waterline/lib/waterline/error/WLError.js:25:15)\n    at new WLValidationError (/usr/local/lib/node_modules/sails/node_modules/waterline/lib/waterline/error/WLValidationError.js:19:28)\n    at _afterValidating (/usr/local/lib/node_modules/sails/node_modules/waterline/lib/waterline/query/validate.js:53:23)\n    at allValidationsChecked (/usr/local/lib/node_modules/sails/node_modules/waterline/lib/waterline/core/validations.js:265:12)\n    at /usr/local/lib/node_modules/sails/node_modules/waterline/node_modules/async/lib/async.js:52:16\n    at Object.async.forEachOf.async.eachOf (/usr/local/lib/node_modules/sails/node_modules/waterline/node_modules/async/lib/async.js:236:30)\n    at Object.async.forEach.async.each (/usr/local/lib/node_modules/sails/node_modules/waterline/node_modules/async/lib/async.js:209:22)\n    at module.exports.Validator.validate (/usr/local/lib/node_modules/sails/node_modules/waterline/lib/waterline/core/validations.js:144:9)\n    at /usr/local/lib/node_modules/sails/node_modules/waterline/lib/waterline/query/validate.js:42:25\n    at /usr/local/lib/node_modules/sails/node_modules/waterline/node_modules/async/lib/async.js:718:13\n    at Immediate.iterate (/usr/local/lib/node_modules/sails/node_modules/waterline/node_modules/async/lib/async.js:262:13)\n    at runCallback (timers.js:672:20)\n    at tryOnImmediate (timers.js:645:5)\n    at processImmediate [as _immediateCallback] (timers.js:617:5)",
+  "reason": "1 attribute is invalid",
+  "code": "E_VALIDATION",
+  "status": 400,
+  "details": "Invalid attributes sent to Sails-music:\n • first_name\n   • \"minLength\" validation rule failed for input: 'Tom'\nSpecifically, it threw an error.  Details:\n undefined\n",
+  "message": "[Error (E_VALIDATION) 1 attribute is in

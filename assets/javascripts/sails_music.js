@@ -37,7 +37,7 @@
     // NOTE: CREATE - This will create a new artist to the music project database
     // TODO: Add new artists through the UI table and pass them to this function
     function addArtist() {
-      url = "http://localhost:1337/music/"
+      url = "http://localhost:1337/sails-music/"
       console.log(url);
       $.ajax({
           url: url,
@@ -62,7 +62,7 @@
         $('#dynamictable').append('<table></table>');
         let table = $('#dynamictable').children();
         table.append("<tr><th>ID</th><th>Artist Name</th><th>Description</th></tr>");
-        $.get("http://localhost:1337/music", function( data ) {
+        $.get("http://localhost:1337/sails-music", function( data ) {
           $.each(data, function(index, value) {
             table.append("<tr><td style='width:3%;text-align:center;'id='nameclick'><a href='#'>" + value.id + "</a></td><td style='width:10%;'>" + value.first_name + " " + value.last_name + "</td>" + "<td>" + value.description + "</td></tr>");
           }) // end each
@@ -73,7 +73,7 @@
       // TODO: Make changes through the UI table and pass them to this function
       function updateArtist() {
         id = 13;
-        url = "http://localhost:1337/music/" + id;
+        url = "http://localhost:1337/sails-music/" + id;
         console.log(url);
         $.ajax({
             url: url,
@@ -93,7 +93,7 @@
       // NOTE: DELETE - This will remove the clicked entry obtained via the delegate global 'this'
       // TODO: This is currently performed via a linked delegate listener. Improve on this method.
       function deleteArtist(id) {
-        url = "http://localhost:1337/music/" + id;
+        url = "http://localhost:1337/sails-music/" + id;
         console.log(url);
         $.ajax({
             url: url,
